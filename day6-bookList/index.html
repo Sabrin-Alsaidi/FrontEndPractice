@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assests/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assests/css/index.css" rel="stylesheet">
+
+    <title>Book List</title>
+</head>
+<body>
+    <div class="container my-5 text-light">
+        <div class="d-flex flex-column bg-dark align-content-center justify-content-center box">
+                <h2 class="py-3">Sabrin Book List </h2>
+                <p>Your way to read more</p>
+            <div class="d-flex align-items-center justify-content-center">
+                <label for="search" id="searchLabel" class="form-label gx-4">Search </label>
+                <input type="text" id="search" class="form-control w-25 m-4" placeholder="Enter the book name..">
+            </div>
+        </div>
+
+        <div class="container text-dark my-0 box ">
+            <h3>Book List To Read </h3>
+                <ul id="bookList">
+                    <li class="my-4">
+                        <span> Book name </span>
+                        <span class="btn btn-dark dtl"> Delete </span>
+                    </li>
+                    <li class="my-4">
+                        <span> Book name </span>
+                        <span class="btn btn-dark dtl"> Delete </span>
+                    </li>
+                    <li class="my-4">
+                        <span> Book name </span>
+                        <span class="btn btn-dark dtl"> Delete </span>
+                    </li>
+                    <li class="my-4">
+                        <span> Book name </span>
+                        <span class="btn btn-dark dtl"> Delete </span>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center justify-content-center">
+                    <input type="text" id="newBook" class="form-control w-25 m-4" placeholder="Enter the book name..">
+                    <label for="add" id="addNewBook" class="btn btn-dark">Add Book</label>
+                    <label for="hide" id="hideBookList" class="btn btn-dark mx-1">Hide List</label>
+
+                </div>
+        </div>
+    </div>
+  
+<script src="./assests/js/bootstrap.min.js"></script>
+<script src="./assests/js/index.js"></script>
+</body>
+</html>

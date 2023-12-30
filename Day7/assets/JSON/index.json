@@ -1,0 +1,8 @@
+{
+    "name" : "Sabrin ",
+    "age" : 28,
+    "Location" : "Muscat" ,
+    "obj": {
+       "arr" : ["order1" , "order2" ,"order3" ]
+    }
+}

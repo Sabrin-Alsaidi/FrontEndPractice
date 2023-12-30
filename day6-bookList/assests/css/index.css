@@ -1,0 +1,24 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+/* .container{
+
+} */
+/* .custom{
+    text-align: center;
+    border-radius: 5px;
+} */
+.box{
+    border-radius: 10px;
+    /* box-shadow: 3px 5px rgba(red, green, blue, alpha); */
+    text-align: center;
+}
+#bookList li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10;
+    flex-direction: row;
+    /* align-content: center; */
+}

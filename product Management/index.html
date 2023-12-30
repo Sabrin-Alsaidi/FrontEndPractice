@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Product Management System</title>
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>crud</h2>
+            <p>Product Management System</p>
+        </div>
+        <div class="inputs">
+            <input type="text" id="Pname" placeholder="Product Name">
+            <div class="price">
+            <input onkeyup="getTotal()" type="number" id="Pprice" placeholder="Product Price">
+            <input onkeyup="getTotal()" type="number"  id="Ptaxes" placeholder="Taxes">
+            <input onkeyup="getTotal()" type="number"  id="Pads" placeholder="Ads">
+            <input onkeyup="getTotal()" type="number"  id="discount" placeholder="Discount">
+            <small id="total"></small>
+            </div>
+            <input type="number" id="count" placeholder="Number of Product">
+            <input type="text" id="category" placeholder="Product Category">
+            <button id="submit">Add Product</button>
+        </div>
+        <div class="outputs">
+            <div class="searchBlock">
+                <input type="text" id="search" placeholder="Search" onkeyup="searchDate(this.value)">
+                <div class="btn-search">
+                    <button onclick="getSearchMood(this.id)" id="searchByName">Search by product name</button>
+                    <button onclick="getSearchMood(this.id)" id="searchByCategory">Search by product category</button>
+                </div>
+                <div id="deleteAll">
+
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Taxes</th>
+                            <th>Ads</th>
+                            <th>Discount</th>
+                            <th>Total</th>
+                            <th>Category</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+<!-- <script src="./assets/js/index.js"></script> -->
+</body>
+</html>
